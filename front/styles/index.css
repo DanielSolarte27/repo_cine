@@ -1,0 +1,119 @@
+body {
+    position: relative;
+    background-image: url('https://cdn.pixabay.com/photo/2017/11/24/10/43/ticket-2974645_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: aliceblue;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    min-height: 100vh;
+}
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 50px;
+}
+h1 {
+    color: lightcyan;
+    font-size: 2em;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+h1:hover {
+    color: cyan;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    transform: translateY(-5px);
+}
+h2 {
+    color: lightcyan;
+    font-size: 1.8em;
+    margin: 10px;
+    transition: color 0.3s, text-shadow 0.3s;
+    padding: 10px;
+}
+p {
+    color: lightcyan;
+    font-size: 1em;
+    margin: 10px;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+    perspective: 1000px;
+}
+li {
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: transparent;
+    color: aliceblue;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.5s, box-shadow 0.5s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transform-style: preserve-3d;
+    position: relative;
+    margin: 10px;
+}
+li:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #ff1493, #00ffff);
+    border-radius: 10px;
+    transform: translateZ(-1px);
+    z-index: -1;
+    transition: opacity 0.5s;
+    opacity: 0;
+}
+li:hover:before {
+    opacity: 1;
+}
+li:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+#cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    text-align: center ;
+} 
+
+.my-card {
+    width: 20rem;
+    background-color: transparent;
+    padding: 20px 10px 20px 10px;
+}
+.my-card img {
+    width: 18rem;
+    align-self: center;
+    
+}
+.my-card:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    
+}
+.form-control {
+    background-color: transparent;
+    border-radius: 5px;
+}
+#movieForm {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+.container {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
